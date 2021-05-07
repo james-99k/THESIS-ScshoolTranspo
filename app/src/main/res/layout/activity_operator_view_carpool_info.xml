@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".DriverViewProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/operatorViewCarpoolInfoToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+    <ImageView
+        android:id="@+id/inCarpoolViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/operatorViewCarpoolInfoToolbar"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/inVehicleBrand"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inCarpoolViewProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Brand"
+        />
+
+    <TextView
+        android:id="@+id/inVehicleModel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inVehicleBrand"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Model"
+        />
+
+    <TextView
+        android:id="@+id/inVehicleColor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inVehicleModel"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Color"
+        />
+
+    <TextView
+        android:id="@+id/inVehiclePlateNo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inVehicleColor"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Plate Number"
+        />
+
+    <TextView
+        android:id="@+id/inVehicleCapacity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inVehiclePlateNo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Capacity"
+        />
+
+    <TextView
+        android:id="@+id/inVehicleSchoolName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inVehicleCapacity"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="School Naame"
+        />
+
+    <TextView
+        android:id="@+id/inVehicleSchoolDestination"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inVehicleSchoolName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="School Destination"
+        />
+
+    <TextView
+        android:id="@+id/inVehicleServiceFee"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inVehicleSchoolDestination"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Service Fee"
+        />
+
+    <Button
+        android:id="@+id/btnEditCarpool"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/inVehicleServiceFee"
+        android:text="Edit Carpool"
+        />
+
+    <Button
+        android:id="@+id/btnDeleteCarpool"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnEditCarpool"
+        android:text="Delete Carpool"
+        />
+
+
+</RelativeLayout>

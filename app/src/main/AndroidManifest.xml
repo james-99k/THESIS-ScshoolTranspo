@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.schooltranspo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SchoolTranspo">
+        <activity android:name=".PassengerViewCarpoolList"></activity>
+        <activity android:name=".Confirmation" />
+        <activity android:name=".Payment" />
+        <activity android:name=".GiveFeedback" />
+        <activity android:name=".DriverViewPassengerProfile" />
+        <activity android:name=".ListOfStudents" />
+        <activity android:name=".DriverViewOperatorInfo" />
+        <activity android:name=".ViewSubscribedVehilceData" />
+        <activity android:name=".ViewPassenger" />
+        <activity android:name=".DriverVehicleProfile" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".EditCarpoolInfo" />
+        <activity android:name=".OperatorViewDriverInfo" />
+        <activity android:name=".OperatorViewCarpoolInfo" />
+        <activity android:name=".vehicleProfile" />
+        <activity android:name=".PassengerCarpoolSearchViewActivity" />
+        <activity android:name=".PassengerCarpoolViewActivity" />
+        <activity android:name=".OperatorViewProfileActivity" />
+        <activity android:name=".DriverViewProfileActivity" />
+        <activity android:name=".PassengerViewProfileActivity" />
+        <activity android:name=".OperatorAddDriverActivity" />
+        <activity android:name=".OperatorAddCarpoolActivity" />
+        <activity android:name=".OperatorEditProfileActivity" />
+        <activity android:name=".DriverEditProfileActivity" />
+        <activity android:name=".PassengerEditProfileActivity" />
+        <activity android:name=".DriverHomepageActivity" />
+        <activity android:name=".OperatorHomepageActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PassengerHomepageActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminHompageActivity" />
+    </application>
+
+</manifest>

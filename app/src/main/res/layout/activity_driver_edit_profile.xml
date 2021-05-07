@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".DriverEditProfileActivity">
+
+    <ImageButton
+        android:id="@+id/ibDriverEditProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter" />
+
+    <EditText
+        android:id="@+id/etDriverEditProfileFullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibDriverEditProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/etDriverEditProfileEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDriverEditProfileFullName"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/etDriverEditProfileContact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDriverEditProfileEmail"
+        android:layout_centerHorizontal="true"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/etDriverEditProfileGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDriverEditProfileContact"
+        android:layout_centerHorizontal="true"
+        android:hint="Gender"
+        />
+
+    <EditText
+        android:id="@+id/etDriverEditProfileAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDriverEditProfileGender"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        />
+    <EditText
+        android:id="@+id/etDriverEditProfileLicense"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDriverEditProfileAddress"
+        android:layout_centerHorizontal="true"
+        android:hint="License Number"
+        />
+
+
+    <Button
+        android:id="@+id/btnDriverEditProfileSave"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etDriverEditProfileLicense"
+        android:text="Save"
+        />
+
+</RelativeLayout>

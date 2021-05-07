@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PassengerHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/subscribedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#f8f9f9">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/vehicleImage"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/bus" />
+
+            <TextView
+                android:id="@+id/VehicleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/vehicleImage"
+                android:text=""
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/driverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VehicleName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/vehicleImage"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/notSubscribed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/vehicleImage"
+                android:text="You have not yet subscribe"
+                android:textSize="16sp"></TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/subscribedLayout"
+            >
+
+            <TextView
+                android:id="@+id/tvPassengerStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/tvPassengerStatusDynamic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_marginLeft="30dp"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/tvPassengerStatus"
+                />
+
+        </RelativeLayout>
+
+        <fragment
+            android:layout_below="@id/relativeLayout"
+            android:id="@+id/mapAPI"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+        </fragment>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

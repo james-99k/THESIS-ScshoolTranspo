@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="350dp"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Assign Driver"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:text="Carpool Name"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/brandCarpool"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:text="Vehicle1"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Please Select Available Drivers"
+        android:textSize="20dp"></TextView>
+
+    <Spinner
+        android:id="@+id/driverSpinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:popupBackground="@color/colorAccent"></Spinner>
+
+    <Button
+        android:id="@+id/saveAssignBtn"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Save" />
+</LinearLayout>

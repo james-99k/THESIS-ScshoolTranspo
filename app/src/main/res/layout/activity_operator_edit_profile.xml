@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".OperatorEditProfileActivity">
+
+    <ImageButton
+        android:id="@+id/ibOperatorEditProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter" />
+
+    <EditText
+        android:id="@+id/etOperatorEditProfileFullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibOperatorEditProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/etOperatorEditProfileEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOperatorEditProfileFullName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/etOperatorEditProfileContact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOperatorEditProfileEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        />
+
+    <EditText
+        android:id="@+id/etOperatorEditProfileGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOperatorEditProfileContact"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Gender"
+        />
+
+    <EditText
+        android:id="@+id/etPassengerEditProfileAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etOperatorEditProfileGender"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        />
+
+    <Button
+        android:id="@+id/btnPassengerEditProfileSave"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etPassengerEditProfileAddress"
+        android:text="Save"
+        />
+
+
+</RelativeLayout>

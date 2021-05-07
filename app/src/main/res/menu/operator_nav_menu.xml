@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/OperatorViewProfile"
+        android:title="View Profile" />
+
+    <item
+        android:id="@+id/OperatorAddDriver"
+        android:title="Add Driver" />
+
+    <item
+        android:id="@+id/OperatorAddCarpool"
+        android:title="Add Carpool" />
+
+    <item
+        android:id="@+id/OperatorLogout"
+        android:title="Logout"
+        />
+</menu>

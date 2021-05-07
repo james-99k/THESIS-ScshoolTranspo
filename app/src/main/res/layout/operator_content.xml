@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/operatorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/operatorTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operatorToolbar">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/operatorTabCarpool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carpool" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/operatorTabDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Requests" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/operatorViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/operatorTabLayout">
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerViewOperator"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+<!--        android:layout_below="@+id/operatorToolbar" />-->
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

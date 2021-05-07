@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgcars" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bus" />
+
+        <RelativeLayout
+            android:id="@+id/relay1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/logo">
+
+            <CheckBox
+                android:id="@+id/cbPassenger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passenger"
+                />
+            <CheckBox
+                android:id="@+id/cbOperator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/cbPassenger"
+                android:text="Operator"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/cbOperator"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etRegisterFullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Fullname"
+                    />
+                <EditText
+                    android:id="@+id/etRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"
+                    />
+                <EditText
+                    android:id="@+id/etRegisterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    />
+                <EditText
+                    android:id="@+id/etRegisterConfPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textPassword"
+                    android:hint="Confirm Password"
+                    />
+
+                <EditText
+                    android:id="@+id/etRegisterContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number"
+                    android:hint="Contact"
+                    />
+
+                <EditText
+                    android:id="@+id/etRegisterEContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="number"
+                    android:hint="Emergency Contact"
+                    />
+
+                <EditText
+                    android:id="@+id/etRegisterGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textCapSentences"
+                    android:hint="Gender"
+                    />
+
+                <EditText
+                    android:id="@+id/etRegisterAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textCapSentences"
+                    android:hint="Address"
+                    />
+
+                <EditText
+                    android:id="@+id/etRegisterSAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:inputType="textCapSentences"
+                    android:hint="School Address"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/shape"
+                        android:text="Register"/>
+
+                    <Button
+                        android:id="@+id/btnRegisterLogin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:textSize="8sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@id/btnRegister"
+                        android:background="@drawable/shape"
+                        android:text="Login Here" />
+
+                    <androidx.core.widget.ContentLoadingProgressBar
+                        android:id="@+id/pbPassengerReg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_below="@id/btnRegisterLogin"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="invisible"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vehicleProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/feedbackToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+
+    <TextView
+        android:id="@+id/driverName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feedbackToolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="29dp"
+        android:hint="Driver Name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/commentBox"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/driverName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="28dp"
+        android:paddingLeft="10dp"></EditText>
+
+    <Button
+        android:id="@+id/feedbackBtn"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentBox"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="139dp"
+        android:text="Submit" />
+
+
+</RelativeLayout>

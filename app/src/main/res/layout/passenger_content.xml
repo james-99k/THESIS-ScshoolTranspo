@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/passengerToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/passengerTabLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/passengerToolbar">-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/passengerTabHome"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Home" />-->
+
+<!--        <com.google.android.material.tabs.TabItem-->
+<!--            android:id="@+id/passengerTabSearch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Search" />-->
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/passengerViewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/passengerTabLayout"-->
+<!--        />-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/subscribedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/passengerToolbar"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#f8f9f9">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/vehicleImage"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/bus" />
+
+            <TextView
+                android:id="@+id/VehicleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/vehicleImage"
+                android:text=""
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/driverName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/VehicleName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/vehicleImage"
+                android:textSize="16sp"></TextView>
+
+            <TextView
+                android:id="@+id/notSubscribed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/vehicleImage"
+                android:text="Top here to Add Carpool Subscription"
+                android:textSize="16sp"></TextView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/subscribedLayout"
+        >
+
+        <TextView
+            android:id="@+id/tvPassengerStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/tvPassengerStatusDynamic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/tvPassengerStatus"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/relativeLayout">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </fragment>
+
+    </RelativeLayout>
+
+</RelativeLayout>

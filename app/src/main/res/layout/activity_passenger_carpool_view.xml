@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".PassengerCarpoolViewActivity">
+
+    <ImageView
+        android:id="@+id/ibPassengerViewCarpoolProfilePic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/ibPassengerViewCarpoolProfileOperator"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibPassengerViewCarpoolProfilePic"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Operator: Operator A"
+        />
+
+    <TextView
+        android:id="@+id/ibPassengerViewCarpoolProfileDriver"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibPassengerViewCarpoolProfileOperator"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Driver: Driver A"
+        />
+
+    <TextView
+        android:id="@+id/ibPassengerViewCarpoolProfileSchool"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibPassengerViewCarpoolProfileDriver"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="School: University of Cebu-Banilad"
+        />
+
+    <TextView
+        android:id="@+id/ibPassengerViewCarpoolProfileRoute"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibPassengerViewCarpoolProfileSchool"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Route: Consolacion - Talamban"
+        />
+
+    <TextView
+        android:id="@+id/ibPassengerViewCarpoolProfileTime"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibPassengerViewCarpoolProfileRoute"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Time fetch: 5:00AM and 4:00PM"
+        />
+
+    <TextView
+        android:id="@+id/ibPassengerViewCarpoolProfileFee"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibPassengerViewCarpoolProfileTime"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Fee: Php 2,000 monthly"
+        />
+
+
+    <Button
+        android:id="@+id/btnPassengerViewProfilePay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ibPassengerViewCarpoolProfileFee"
+        android:text="Pay"
+        />
+
+</RelativeLayout>

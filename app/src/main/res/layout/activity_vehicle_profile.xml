@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vehicleProfile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/operatorToolbarAfter"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+    <ImageView
+        android:id="@+id/carpoolImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/operatorToolbarAfter"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/vehicleBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carpoolImage"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:hint="VehicleBrand" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicleBrand"
+        android:layout_marginLeft="65dp"
+        android:labelFor="@id/statusCarpool"
+        android:layout_marginTop="20dp"
+        android:text="Status:" />
+
+    <TextView
+
+        android:id="@+id/statusCarpool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicleBrand"
+        android:layout_alignLeft="@id/label1"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:hint="Operational" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label1"
+        android:layout_marginLeft="65dp"
+        android:labelFor="@id/driverAssign"
+        android:layout_marginTop="15dp"
+        android:text="Driver:" />
+
+    <TextView
+        android:id="@+id/driverAssign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusCarpool"
+        android:layout_alignLeft="@id/label2"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:hint="Driver A"
+        />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label2"
+        android:layout_marginLeft="65dp"
+        android:labelFor="@id/carpoolSchoolDestination"
+        android:layout_marginTop="15dp"
+        android:text="School:" />
+
+    <TextView
+        android:id="@+id/carpoolSchoolDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/driverAssign"
+        android:layout_alignLeft="@id/label3"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:hint="University of Cebu-Banilad"
+        />
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label3"
+        android:layout_marginLeft="65dp"
+        android:labelFor="@id/carpoolRouts"
+        android:layout_marginTop="15dp"
+        android:text="Route:" />
+
+    <TextView
+        android:id="@+id/carpoolRouts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carpoolSchoolDestination"
+        android:layout_alignLeft="@id/label4"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:hint="Consolacion - Talamban"
+        />
+
+    <TextView
+        android:id="@+id/label5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label4"
+        android:layout_marginLeft="65dp"
+        android:labelFor="@id/carpoolTimeFetch"
+        android:layout_marginTop="15dp"
+        android:hint="Time fetch:" />
+
+    <TextView
+        android:id="@+id/carpoolTimeFetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carpoolRouts"
+        android:layout_alignLeft="@id/label5"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:text="5:00AM and 4:00PM"
+        />
+
+    <TextView
+        android:id="@+id/label6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label5"
+        android:layout_marginLeft="65dp"
+        android:labelFor="@id/carpoolFees"
+        android:layout_marginTop="15dp"
+        android:text="Fee:" />
+
+    <TextView
+        android:id="@+id/carpoolFees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/carpoolTimeFetch"
+        android:layout_alignLeft="@id/label6"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:hint="Php 2,000 monthly"
+        />
+
+
+    <Button
+        android:id="@+id/viewCarpoolBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/carpoolFees"
+        android:text="View Carpool Info"
+        />
+
+    <Button
+        android:id="@+id/viewDriverBtn"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewCarpoolBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="View Driver Info" />
+
+    <Button
+        android:id="@+id/assignDriver"
+        android:onClick="ShowPopup"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewDriverBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Assign Driver" />
+
+    <Button
+        android:id="@+id/removeAssignDriver"
+        android:layout_width="188dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assignDriver"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Remove Assigned Driver" />
+
+</RelativeLayout>

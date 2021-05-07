@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".DriverViewProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/operatorViewDriverInfoToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+    <ImageView
+        android:id="@+id/inDriverViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/operatorViewDriverInfoToolbar"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/inDriverViewProfileFullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inDriverViewProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Full Name"
+        />
+
+    <TextView
+        android:id="@+id/inDriverViewProfileEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inDriverViewProfileFullName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        />
+
+    <TextView
+        android:id="@+id/inDriverViewProfileContact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inDriverViewProfileEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Contact Number"
+        />
+
+    <TextView
+        android:id="@+id/inDriverViewProfileGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inDriverViewProfileContact"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Gender"
+        />
+
+    <TextView
+        android:id="@+id/inDriverViewProfileAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inDriverViewProfileGender"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        />
+
+    <TextView
+        android:id="@+id/inDriverViewProfileLicense"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inDriverViewProfileAddress"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="License Number"
+        />
+
+    <TextView
+        android:id="@+id/infeedback"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inDriverViewProfileLicense"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Feedback"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <view
+        class="androidx.appcompat.app.AlertController$RecycleListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/infeedback"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="17dp"></view>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".OperatorViewProfileActivity">
+
+    <ImageView
+        android:id="@+id/ibOperatorViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/tvOperatorViewProfileFullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibOperatorViewProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Full Name"
+        />
+
+    <TextView
+        android:id="@+id/tvOperatorViewProfileEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOperatorViewProfileFullName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        />
+
+    <TextView
+        android:id="@+id/tvOperatorViewProfileContact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOperatorViewProfileEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Contact Number"
+        />
+
+    <TextView
+        android:id="@+id/tvOperatorViewProfileGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOperatorViewProfileContact"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Gender"
+        />
+
+    <TextView
+        android:id="@+id/tvOperatorViewProfileAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOperatorViewProfileGender"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        />
+
+
+    <Button
+        android:id="@+id/btnOperatorViewProfileEdit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvOperatorViewProfileAddress"
+        android:text="Edit"
+        />
+
+</RelativeLayout>

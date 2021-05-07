@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".PassengerViewProfileActivity">
+
+    <ImageView
+        android:id="@+id/ibPassengerViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/tvPassengerViewProfileFullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibPassengerViewProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Full Name"
+        />
+
+    <TextView
+        android:id="@+id/tvPassengerViewProfileEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassengerViewProfileFullName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        />
+
+    <TextView
+        android:id="@+id/tvPassengerViewProfileContact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassengerViewProfileEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Contact Number"
+        />
+
+    <TextView
+        android:id="@+id/tvPassengerViewProfileEmergencyContact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassengerViewProfileContact"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Emergency Contact Number"
+        />
+
+    <TextView
+        android:id="@+id/tvPassengerViewProfileGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassengerViewProfileEmergencyContact"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Gender"
+        />
+
+    <TextView
+        android:id="@+id/tvPassengerViewProfileAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassengerViewProfileGender"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        />
+
+    <TextView
+        android:id="@+id/tvPassengerViewProfileSchoolAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassengerViewProfileAddress"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="School Address"
+        />
+
+    <Button
+        android:id="@+id/btnPassengerViewProfileEdit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvPassengerViewProfileSchoolAddress"
+        android:text="Edit"
+        />
+
+
+</RelativeLayout>

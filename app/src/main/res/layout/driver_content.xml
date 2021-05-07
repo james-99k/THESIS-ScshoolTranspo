@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/driverToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/ibPassengerChosenDriver"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@id/driverToolbar"-->
+<!--        android:src="@drawable/map"-->
+<!--        />-->
+    <fragment
+        android:layout_below="@id/driverToolbar"
+        android:id="@+id/map"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment">
+    </fragment>
+
+
+</RelativeLayout>

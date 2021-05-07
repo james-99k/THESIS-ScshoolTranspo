@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverViewProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/driverViewVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        />
+
+    <ImageView
+        android:id="@+id/drCarpoolViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/driverViewVehicle"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/operatorName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drCarpoolViewProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="OperatorName"
+        />
+
+    <TextView
+        android:id="@+id/drVehicleBrand"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operatorName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Brand"
+        />
+
+    <TextView
+        android:id="@+id/drVehicleModel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drVehicleBrand"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Model"
+        />
+
+    <TextView
+        android:id="@+id/drVehicleColor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drVehicleModel"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Color"
+        />
+
+    <TextView
+        android:id="@+id/drVehiclePlateNo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drVehicleColor"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Plate Number"
+        />
+
+    <TextView
+        android:id="@+id/drVehicleCapacity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drVehiclePlateNo"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Capacity"
+        />
+
+    <TextView
+        android:id="@+id/drVehicleSchoolName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drVehicleCapacity"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="School Naame"
+        />
+
+    <TextView
+        android:id="@+id/drVehicleSchoolDestination"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drVehicleSchoolName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="School Destination"
+        />
+
+    <TextView
+        android:id="@+id/drVehicleServiceFee"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drVehicleSchoolDestination"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Service Fee"
+        />
+
+    <Button
+        android:id="@+id/viewOperatorInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/drVehicleServiceFee"
+        android:text="View Operator Info"
+        />
+
+</RelativeLayout>

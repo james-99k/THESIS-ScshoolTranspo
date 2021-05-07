@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    tools:context=".DriverViewProfileActivity">
+
+    <ImageView
+        android:id="@+id/ibDriverViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bus"
+        />
+
+    <TextView
+        android:id="@+id/tvDriverViewProfileFullName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ibDriverViewProfile"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Full Name"
+        />
+
+    <TextView
+        android:id="@+id/tvDriverViewProfileEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDriverViewProfileFullName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        />
+
+    <TextView
+        android:id="@+id/tvDriverViewProfileContact"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDriverViewProfileEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Contact Number"
+        />
+
+    <TextView
+        android:id="@+id/tvDriverViewProfileGender"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDriverViewProfileContact"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Gender"
+        />
+
+    <TextView
+        android:id="@+id/tvDriverViewProfileAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDriverViewProfileGender"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Address"
+        />
+
+    <TextView
+        android:id="@+id/tvDriverViewProfileLicense"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDriverViewProfileAddress"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="License Number"
+        />
+
+    <Button
+        android:id="@+id/btnDriverViewProfileEdit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvDriverViewProfileLicense"
+        android:text="Edit"
+        />
+
+
+</RelativeLayout>

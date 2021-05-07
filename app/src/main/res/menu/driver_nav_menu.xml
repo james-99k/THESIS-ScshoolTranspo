@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/driverViewProfile"
+        android:title="View Profile" />
+    <item
+        android:id="@+id/driverMyVehicleProfile"
+        android:title="My Vehicle Profile" />
+    <item
+        android:id="@+id/driverLisOfPassengers"
+        android:title="List of Passenger" />
+    <item
+        android:id="@+id/driverFeedback"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/driverLogout"
+        android:title="Logout"
+        />
+
+</menu>

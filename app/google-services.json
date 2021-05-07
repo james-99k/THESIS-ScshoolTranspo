@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1034830837774",
+    "firebase_url": "https://schooltranspo.firebaseio.com",
+    "project_id": "schooltranspo",
+    "storage_bucket": "schooltranspo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034830837774:android:278ba8feebd357980c245f",
+        "android_client_info": {
+          "package_name": "com.example.schooltranspo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1034830837774-vlck9luejq4jpil88rm5ujrod1snmmnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAHMjoTyf0QXTLiVecsl0xFA7s0-FyKrE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1034830837774-vlck9luejq4jpil88rm5ujrod1snmmnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
